@@ -40,10 +40,10 @@ uint8_t hextab[17]="0123456789ABCDEF";
 	@param receivePin --> software serial RX
 		   transmitPin --> software serial TX
 */
-VR::VR(uint8_t receivePin, uint8_t transmitPin) : SoftwareSerial(receivePin, transmitPin)
+VR::VR(uint8_t receivePin, uint8_t transmitPin, uint16_t baudRate) : SoftwareSerial(receivePin, transmitPin)
 {
 	instance = this;
-	SoftwareSerial::begin(38400);
+	SoftwareSerial::begin(baudRate);
 }
 
 /**

@@ -105,7 +105,7 @@
 
 class VR : public SoftwareSerial{
 public:
-	VR(uint8_t receivePin, uint8_t transmitPin);
+	VR(uint8_t receivePin, uint8_t transmitPin, uint16_t baudRate=38400);
 	
 	static VR* getInstance() {
 	   return instance;
