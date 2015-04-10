@@ -30,10 +30,10 @@
 /**        
  * Connection
  * Arduino    VoiceRecognitionModule
- * 2   ------->     TX
- * 3   ------->     RX
+ * 8   ------->     TX
+ * 9   ------->     RX
  */
-VR myVR(2,3);    // 2:RX 3:TX, you can choose your favourite pins.
+VR myVR(8, 9, 9600);    // 8:RX 9:TX, you can choose your favourite pins.
 
 /***************************************************************************/
 /** declare print functions */
